@@ -1,0 +1,69 @@
+main .container {
+    border: 1px solid black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 50px;
+    background-color: var(--cor-principal);
+}
+
+main .container .logo img {
+    width: 350px;
+    border-radius: 50%;
+}
+
+main .container .login {
+    background-color: #FFF;
+    width: 450px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    border-radius: 20px;
+    gap: 20px;
+}
+
+main .container .login .title {
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-size: 45px;
+}
+
+main .container .login .inputs {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    gap: 20px;
+}
+
+main .container .login .inputs input {
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: rgba(250, 235, 215, 0.418);
+}
+
+main .container .login button {
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 30%;
+    color: black;
+    background-color: azure;
+    font-family: "Rubik Glitch", system-ui;
+}
+
+main .container .login button:hover {
+    background-color: rgb(90, 53, 53);
+    color: #FFF;
+}
+
+@media(max-width: 731px) {
+    main .container .logo {
+        display: none;
+    }
+}

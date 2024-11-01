@@ -1,0 +1,137 @@
+body {
+    background-color: var(--cor-principal);
+    font-family: var(--fonte-secundaria);
+}
+
+header {
+    background-color: #FFF;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-family: var(--fonte-principal);
+}
+
+main {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding: 20px;
+}
+
+main .container {
+    flex-direction: column;
+    width: 80%;
+    min-height: 80vh;
+    display: flex;
+    background-color: aliceblue;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgb(48, 47, 47);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+
+main .container .form-title .title h3 {
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+main .container .form-title .title h3::after {
+    content: '';
+    display: block;
+    width: 10rem;
+    height: 5px;
+    background-color: var(--cor-principal);
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+main .container .container-form {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+main .container .container-form .input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+main .container .container-form .input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    margin-bottom: 5px;
+}
+
+
+main .container .container-form .input-box input {
+    padding: .8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px rgb(37, 36, 36);
+}
+
+main .container .container-form .input-box input:hover {
+    background-color: #eeeeee75;
+}
+
+main .container .container-form .input-box input:focus-visible {
+    outline: 1px solid rgb(204, 91, 91);
+}
+
+main .container .container-form .input-box label, main .container .genero-title h4 {
+    font-weight: bolder;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+main .container .genero-inputs .genero-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+main .container .botao-enviar button {
+    border: none;
+    padding: 1rem;
+    background-color: rgb(121, 94, 94);
+    border-radius: 20px;
+}
+
+main .container .botao-enviar button:hover {
+    border: none;
+    padding: 1rem;
+    background-color: rgb(68, 51, 51);
+    border-radius: 20px;
+}
+
+main .container .botao-enviar button a {
+    font-weight: 800;
+    color: white;
+    text-decoration: none;
+}
+
+
+@media(max-width: 475px) {
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    main .container .form-title .title h3 {
+        font-size: 20px;
+    }
+}
